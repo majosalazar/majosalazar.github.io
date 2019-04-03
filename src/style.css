@@ -26,3 +26,15 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+#sectionIntro {
+  display: block;
+}
+
+#sectionProyectos {
+  display: block;
+}
+
+#sectionSobreMi {
+  display: none;
+}
