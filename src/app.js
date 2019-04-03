@@ -1,0 +1,3 @@
+btnInicio = () => {
+  console.log("hola");
+}
