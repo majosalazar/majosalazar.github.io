@@ -1,29 +1,29 @@
 btnInicio = () => {
   sectionPresentacion.style.display = 'block';
-  sectionProyectos.style.diplay = 'block';
+  sectionProyectos.style.display = 'block';
   sectionSobreMi.style.display = 'none';
-  sectionHerramientas.style.diplay = 'block';
+  sectionHerramientas.style.display = 'block';
   sectionContacto.style.display = 'block';
-  printProyect.style.diplay = 'none';
+  printProyect.style.display = 'none';
 }
 
-/*
+
 btnProyecto = () => {
-  sectionPresentacion.style.display = 'none';
-  sectionProyectos.style.diplay = 'block';
+  sectionPresentacion.style.display = 'block';
+  sectionProyectos.style.display = 'block';
   sectionSobreMi.style.display = 'none';
-  sectionHerramientas.style.diplay = 'none';
+  sectionHerramientas.style.display = 'block';
   sectionContacto.style.display = 'block';
+  printProyect.style.display = 'none';
 }
-*/
 
 btnSobreMi = () => {
   sectionPresentacion.style.display = 'none';
   sectionProyectos.style.display = 'none';
   sectionSobreMi.style.display = 'block';
-  sectionHerramientas.style.diplay = 'none';
+  sectionHerramientas.style.display = 'none';
   sectionContacto.style.display = 'block';
-  printProyect.style.diplay = 'none';
+  printProyect.style.display = 'none';
 }
 
 btnHerramientas = () => {
@@ -43,11 +43,11 @@ lazarillo = () => {
   console.log('hola');
   
   sectionPresentacion.style.display = 'none';
-  sectionProyectos.style.diplay = 'none';
+  sectionProyectos.style.display = 'none';
   sectionSobreMi.style.display = 'none';
-  sectionHerramientas.style.diplay = 'none';
+  sectionHerramientas.style.display = 'none';
   sectionContacto.style.display = 'block';
-  printProyect.style.diplay = 'block';
+  printProyect.style.display = 'block';
   document.getElementById('printProyect').innerHTML = '';
   document.getElementById('printProyect').innerHTML = `
   <p> WENA ! </p>
@@ -61,14 +61,14 @@ console.log('chao');
 
 
   sectionPresentacion.style.display = 'none';
-  sectionProyectos.style.diplay = 'none';
+  sectionProyectos.style.display = 'none';
   sectionSobreMi.style.display = 'none';
-  sectionHerramientas.style.diplay = 'none';
+  sectionHerramientas.style.display = 'none';
   sectionContacto.style.display = 'block';
-  printProyect.style.diplay = 'block';
+  printProyect.style.display = 'block';
   document.getElementById('printProyect').innerHTML = '';
   document.getElementById('printProyect').innerHTML = `
-  <section>
+  <section class="container">
     <div id="doc" class="markdown-body container-fluid comment-enabled" style="position: relative;">
       <h1 id="Aplicación-financiera-“Tus-Finanzas”"><a class="anchor hidden-xs"
           href="#Aplicación-financiera-“Tus-Finanzas”" title="Aplicación-financiera-“Tus-Finanzas”"><span

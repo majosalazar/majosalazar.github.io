@@ -31,8 +31,6 @@ body {
 }
 
 .sectionIntro {
-  background-position: center;
-  background-size: cover;
   height: 100vh;
 }
 
@@ -49,7 +47,7 @@ body {
 }
 
 #printProyect {
-  display: block;
+  display: none;
 }
 
 .section-contacto {
@@ -64,3 +62,12 @@ html {
   padding-right: 0;
   padding-left: 0;
 }
+
+.colorTextNavbar {
+  color: #381C75;
+}
+
+a:hover {
+  background-color: #FF285B;
+}
+
