@@ -121,3 +121,13 @@ a {
   padding-top: 20px;
   padding-bottom: 30px;
 }
+
+.carta {
+  padding: 15px;
+}
+
+.title-link {
+  font-size: 25px;
+  font-style: bold;
+  color: #381C75;
+}
