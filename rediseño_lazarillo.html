@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Rediseño de Lazarillo - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled"><h1 id="Rediseño-de-Lazarillo"><a class="anchor hidden-xs" href="#Rediseño-de-Lazarillo" title="Rediseño-de-Lazarillo"><span class="octicon octicon-link"></span></a>Rediseño de Lazarillo</h1><p>UX Challenge / Magical Starup</p><p><img src="https://i.imgur.com/RV02A8n.png" alt=""></p><h2 id="Resumen-del-proyecto"><a class="anchor hidden-xs" href="#Resumen-del-proyecto" title="Resumen-del-proyecto"><span class="octicon octicon-link"></span></a>Resumen del proyecto</h2><p>Lazarillo es una startup chilena que ha desarrollado una aplicación móvil de orientación inteligente para personas ciegas y de baja visión, que les guía a través de la ciudad por medio de mensajes de voz, entregándoles orientación y autonomía a las personas con discapacidad visual. La aplicación actualmente tiene 10.000 usuarios activos, de un total de 80.000 usuarios registrados.</p><p>Actualmente en Lazarillo buscan que sus usuarios puedan sacar el mayor provecho posible de las funcionalidades que tiene la app, es por esto que se contactan con nuestro equipo para detectar los problemas que presentan sus usuarios y trabajar en una propuesta de mejora.</p><h3 id="Ficha-técnica"><a class="anchor hidden-xs" href="#Ficha-técnica" title="Ficha-técnica"><span class="octicon octicon-link"></span></a>Ficha técnica</h3><p>Cliente: Lazarillo app.<br>
+Equipo: 4 UX Designers.<br>
+Mi Rol: UX Research, UI Design, User Testing.<br>
+Duración: 10 días.<br>
+Plataforma: Móvil (iOS y Android)<br>
+Herramientas utilizadas: Trello, Miró, Google Drive, Adobe XD.</p><h3 id="El-desafío"><a class="anchor hidden-xs" href="#El-desafío" title="El-desafío"><span class="octicon octicon-link"></span></a>El desafío</h3><p>Trabajamos puntualmente en entender el por qué los usuarios no conocen todas las funcionalidades de la aplicación.</p><p>Puedes revisar el desafío completo <a href="https://drive.google.com/open?id=1TIczYF86E34cOownMy8a9EMYUwp0IGY8" target="_blank" rel="noopener">aquí</a>.</p><h3 id="La-Solución"><a class="anchor hidden-xs" href="#La-Solución" title="La-Solución"><span class="octicon octicon-link"></span></a>La Solución</h3><p>Una mejora del flujo de la app, con el fin de mejorar la experiencia de uso, simplificando la interfaz y ajustándola a las necesidades de los usuarios, incorporando también un tutorial claro y descriptivo de las funcionalidades disponibles, promoviendo que los usuarios puedan sacar el mayor provecho posible de Lazarillo.</p><h2 id="El-proceso"><a class="anchor hidden-xs" href="#El-proceso" title="El-proceso"><span class="octicon octicon-link"></span></a>El proceso</h2><p>Como equipo de UX nuestro objetivo principal es identificar los principales problemas y/o dificultades que tienen los usuarios con respecto a la navegación y búsqueda de categorías dentro de la aplicación, con el fin de proponer una posible solución.</p><p>// iconografía</p><h3 id="Entendimiento"><a class="anchor hidden-xs" href="#Entendimiento" title="Entendimiento"><span class="octicon octicon-link"></span></a>Entendimiento</h3><h4 id="Contexto"><a class="anchor hidden-xs" href="#Contexto" title="Contexto"><span class="octicon octicon-link"></span></a>Contexto</h4><p>Lazarillo permite a personas con discapacidad visual desplazarse autónomamente por la ciudad gracias al GPS de su celular. Sus principales funciones son: explorar el entorno, buscar lugares específicos, guardar sitios favoritos, etc.</p><p>Se encuentra funcionando desde fines del 2016 formalmente. Cuenta con 80.000 descargas y actualmente están incorporando exploración en espacios interiores en diversos lugares como Bancos, Cajas de compensación y Universidades.</p><h4 id="Público-objetivo"><a class="anchor hidden-xs" href="#Público-objetivo" title="Público-objetivo"><span class="octicon octicon-link"></span></a>Público objetivo</h4><p>La mayoría de los usuarios de Lazarillo son personas con baja visión y ciegos. Es utilizada mensualmente por 10.000 personas en todo el mundo, está traducida a 16 idiomas y el 50% de sus usuarios son angloparlantes.</p><h4 id="Accesibilidad"><a class="anchor hidden-xs" href="#Accesibilidad" title="Accesibilidad"><span class="octicon octicon-link"></span></a>Accesibilidad</h4><h5 id="¿Cómo-diseñar-experiencias-accesibles-y-móviles"><a class="anchor hidden-xs" href="#¿Cómo-diseñar-experiencias-accesibles-y-móviles" title="¿Cómo-diseñar-experiencias-accesibles-y-móviles"><span class="octicon octicon-link"></span></a>¿Cómo diseñar experiencias accesibles y móviles?</h5><ul>
+<li>Etiquetar botones y estados que se están cargando.</li>
+<li>Que sea clara la forma de salir de modales</li>
+<li>Usar lenguaje descriptivo (ej:ingresar contraseña).</li>
+<li>Dar jerarquía  (poner títulos por ejemplo del contenido).</li>
+<li>Añadir texto alternativo a las imágenes.</li>
+<li>Utilizar el sonido para comunicar algo, (ej: cambio de un botón a otro).</li>
+</ul><p><a href="https://www.willowtreeapps.com/ideas/how-to-design-accessible-mobile-experiences-for-the-blind" target="_blank" rel="noopener">https://www.willowtreeapps.com/ideas/how-to-design-accessible-mobile-experiences-for-the-blind</a></p><h3 id="Investigación"><a class="anchor hidden-xs" href="#Investigación" title="Investigación"><span class="octicon octicon-link"></span></a>Investigación</h3><h4 id="Benchmark"><a class="anchor hidden-xs" href="#Benchmark" title="Benchmark"><span class="octicon octicon-link"></span></a>Benchmark</h4><p><img src="https://i.imgur.com/bKvnfnI.png" alt=""></p><p>Se analizaron diferentes apps dirigidas a personas con discapacidad visual. Se determinó lo siguiente:</p><ul>
+<li>Las interfaces de estas app son simples y generalmente tienen colores que hacen alto contraste.</li>
+<li>Prestan bastante atención a los tamaños y tipo de tipografía.</li>
+<li>Algunas tienen manuales o tutoriales bastante complejos y disponibles en versión audio directamente.</li>
+</ul><p>Puedes revisar el análisis completo <a href="https://drive.google.com/open?id=1nvxq8W_69QSYRJJLl_Qx_FlZkZyQJAK-_wBGgLshUOw" target="_blank" rel="noopener">aquí</a></p><h4 id="Entrevistas"><a class="anchor hidden-xs" href="#Entrevistas" title="Entrevistas"><span class="octicon octicon-link"></span></a>Entrevistas</h4><h5 id="Stakeholders"><a class="anchor hidden-xs" href="#Stakeholders" title="Stakeholders"><span class="octicon octicon-link"></span></a>Stakeholders</h5><p>Entrevistamos a 3 stakeholders de Lazarillo; el Director Ejecutivo, el Director de Experiencias de Usuarios y la Gestora de Fondos.</p><p>Estas entrevistas nos permitieron identificar las principales problemáticas que presenta Lazarillo actualmente, que son:</p><ul>
+<li>Los usuarios consideran importante la disponibilidad de la función favoritos en la app, sin embargo ellos no tienen conocimiento de que la app ya cuenta con esta.</li>
+<li>Las mayores quejas o solicitudes de los usuarios con relación a la app, es que mejore la precisión, tenga un tutorial para funciones avanzadas, simplificar funcionalidades, entre otras.</li>
+</ul><h5 id="Entrevistas-y-Testeo-de-la-app-con-usuarios"><a class="anchor hidden-xs" href="#Entrevistas-y-Testeo-de-la-app-con-usuarios" title="Entrevistas-y-Testeo-de-la-app-con-usuarios"><span class="octicon octicon-link"></span></a>Entrevistas y Testeo de la app con usuarios</h5><p>Objetivo fue conocer cómo los usuarios utilizan e interactúan con su celular en el día a día, qué aplicaciones utilizan y cómo.</p><ul>
+<li>A partir de esta experiencia fue que pudimos entender cómo es que las personas con discapacidad visual interactúan con la tecnología y cómo los lectores de pantalla son quienes interpretan para ellos todo aquello que aparece en la pantalla.</li>
+<li>Con el paso el tiempo se memorizan muchos de los flujos y posiciones de los botones de las aplicaciones.</li>
+<li>Nos mostraron cómo utilizan Lazarillo app y en qué momentos les es de ayuda.</li>
+<li>Pudimos entender la importancia que tiene para ellos el poder movilizarse de forma independiente y autónoma.</li>
+</ul><p>Puedes revisar el material completo de las entrevistas <a href="https://docs.google.com/document/d/1i08Uem4ZMPOwqJPEEy736DLhyysRDfvO7s7SrvWIapo/edit" target="_blank" rel="noopener">aquí</a>.</p><h3 id="Análisis"><a class="anchor hidden-xs" href="#Análisis" title="Análisis"><span class="octicon octicon-link"></span></a>Análisis</h3><h4 id="Flujo-actual-de-la-aplicación"><a class="anchor hidden-xs" href="#Flujo-actual-de-la-aplicación" title="Flujo-actual-de-la-aplicación"><span class="octicon octicon-link"></span></a>Flujo actual de la aplicación</h4><p>Se analizó el flujo de la app con el fin de entender las diferentes variables que hacen que un gran número de usuarios no pueda encontrar algunas funcionalidades de lazarillo.</p><p><img src="https://i.imgur.com/Pdr6QXH.jpg" alt="Flujo inicial"></p><h4 id="Custumer-journey-map"><a class="anchor hidden-xs" href="#Custumer-journey-map" title="Custumer-journey-map"><span class="octicon octicon-link"></span></a>Custumer journey map</h4><h5 id="Usuario-Principiante"><a class="anchor hidden-xs" href="#Usuario-Principiante" title="Usuario-Principiante"><span class="octicon octicon-link"></span></a>Usuario Principiante</h5><p>Consideramos un usuario principiante, quien acaba de instalar la app, porque debe explorar la app para conocer sus funcionalidades y las disposiciones que estas tienen, hasta llegar a la funcionalidad que busca específicamente.<br>
+<img src="https://i.imgur.com/cIeeT71.png" alt="Customer Journey Map usuario principiante"></p><h5 id="Usuario-Intermedio"><a class="anchor hidden-xs" href="#Usuario-Intermedio" title="Usuario-Intermedio"><span class="octicon octicon-link"></span></a>Usuario Intermedio</h5><p>Consideramos un usuario intermedio el cual ya maneja la app, entiende cuál es el flujo que debe realizar para acceder a la funcionalidad que necesita.<br>
+<img src="https://i.imgur.com/5mXj9eX.png" alt="Customer Journey Map usuario Intermedio"></p><h5 id="Viaje-ideal"><a class="anchor hidden-xs" href="#Viaje-ideal" title="Viaje-ideal"><span class="octicon octicon-link"></span></a>Viaje ideal</h5><p><img src="https://i.imgur.com/QZllOH5.png" alt=""></p><h3 id="Ideación"><a class="anchor hidden-xs" href="#Ideación" title="Ideación"><span class="octicon octicon-link"></span></a>Ideación</h3><p>El proceso de ideación  que realizamos presenta 5 etapas; aprendizajes, agrupar por tema, descubrimientos, ¿como podríamos…? y finalmente una lluvia de ideas.<br>
+<img src="https://i.imgur.com/6SrGECt.png" alt="Proceso de ideación grupal"></p><h4 id="Aprendizajes-agrupados-por-temas"><a class="anchor hidden-xs" href="#Aprendizajes-agrupados-por-temas" title="Aprendizajes-agrupados-por-temas"><span class="octicon octicon-link"></span></a>Aprendizajes agrupados por temas</h4><p><img src="https://i.imgur.com/HeOEKYl.png" alt="Ideación en sticker digital"></p><h4 id="Resúmen-del-proceso-de-ideación"><a class="anchor hidden-xs" href="#Resúmen-del-proceso-de-ideación" title="Resúmen-del-proceso-de-ideación"><span class="octicon octicon-link"></span></a>Resúmen del proceso de ideación</h4><p><img src="https://i.imgur.com/PsayTfe.jpg" alt=""></p><h3 id="Diseño"><a class="anchor hidden-xs" href="#Diseño" title="Diseño"><span class="octicon octicon-link"></span></a>Diseño</h3><h4 id="Flujo-del-usuario"><a class="anchor hidden-xs" href="#Flujo-del-usuario" title="Flujo-del-usuario"><span class="octicon octicon-link"></span></a>Flujo del usuario</h4><p><img src="https://i.imgur.com/thLDSRz.png" alt="Flujo actual"></p><h4 id="Sketch"><a class="anchor hidden-xs" href="#Sketch" title="Sketch"><span class="octicon octicon-link"></span></a>Sketch</h4><h4 id="Prototipo-de-alta"><a class="anchor hidden-xs" href="#Prototipo-de-alta" title="Prototipo-de-alta"><span class="octicon octicon-link"></span></a>Prototipo de alta</h4><p>Se decidió implementar un filtro al ingresar a la app que permite al usuario escoger un perfil según su situación de discapacidad y a partir de esto entregarle una versión optimizada.<br>
+<img src="https://i.imgur.com/E0baUh7.jpg" alt=""></p><p>Se cambió la disposición de los elementos centrales a un listado, también se re-categorizó algunas funcionalidades con el fin de presentar un flujo más ordenado al usuario.</p><p>También se decidió cambiar la barra inferior fija presentándole al usuario 3 opciones, ¿Donde estoy?, pausar o reanudar una exploración y repetir la última indicación.</p><p><img src="https://i.imgur.com/a6WzlfN.jpg" alt=""></p><h3 id="Validación"><a class="anchor hidden-xs" href="#Validación" title="Validación"><span class="octicon octicon-link"></span></a>Validación</h3><h4 id="Testeo"><a class="anchor hidden-xs" href="#Testeo" title="Testeo"><span class="octicon octicon-link"></span></a>Testeo</h4><p>El testeo de nuestra propuesta se llevó a cabo en el colegio para ciegos Santa Lucia. Particularmente se testeó a un usuario ciego y otra de baja visión.<br>
+<img src="https://i.imgur.com/RCeg1iN.jpg" alt=""></p><h5 id="Testeo-a-personas-ciegos"><a class="anchor hidden-xs" href="#Testeo-a-personas-ciegos" title="Testeo-a-personas-ciegos"><span class="octicon octicon-link"></span></a>Testeo a personas ciegos</h5><ul>
+<li>El botón “Sígueme”, no les hace sentido “podría ser ir a pie”, necesitan un mensaje más directo.</li>
+<li>Los usuarios que ya llevan tiempo usando Lazarillo prefieren la disposición en cuadrícula, ya que les permite acceder directamente a alguna opción y memorizarla.</li>
+<li>Los usuarios no entendieron El botón “Lugares accesibles” ya que no lograban interpretar la frase utilizada.</li>
+</ul><h5 id="Testeo-a-personas-con-baja-visión"><a class="anchor hidden-xs" href="#Testeo-a-personas-con-baja-visión" title="Testeo-a-personas-con-baja-visión"><span class="octicon octicon-link"></span></a>Testeo a personas con baja visión</h5><ul>
+<li>La disposición en cuadrícula les permite recordar las siluetas de los iconos.</li>
+<li>El contraste ayuda bastante a una mejor visualización.</li>
+<li>Quisieran haber podido usar una lupa para ver mejor.</li>
+</ul><h4 id="Métricas"><a class="anchor hidden-xs" href="#Métricas" title="Métricas"><span class="octicon octicon-link"></span></a>Métricas</h4><p>Se evaluaron el número de clicks o pasos que tomaba realizar una tarea en particular y con la propuesta de mejora que realizamos se obtuvieron los siguientes resultados.</p><p><img src="https://i.imgur.com/x7fk4yx.jpg" alt=""></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Rediseño-de-Lazarillo" title="Rediseño de Lazarillo">Rediseño de Lazarillo</a><ul class="nav">
+<li><a href="#Resumen-del-proyecto" title="Resumen del proyecto">Resumen del proyecto</a><ul class="nav">
+<li><a href="#Ficha-técnica" title="Ficha técnica">Ficha técnica</a></li>
+<li><a href="#El-desafío" title="El desafío">El desafío</a></li>
+<li><a href="#La-Solución" title="La Solución">La Solución</a></li>
+</ul>
+</li>
+<li><a href="#El-proceso" title="El proceso">El proceso</a><ul class="nav">
+<li><a href="#Entendimiento" title="Entendimiento">Entendimiento</a></li>
+<li><a href="#Investigación" title="Investigación">Investigación</a></li>
+<li><a href="#Análisis" title="Análisis">Análisis</a></li>
+<li><a href="#Ideación" title="Ideación">Ideación</a></li>
+<li><a href="#Diseño" title="Diseño">Diseño</a></li>
+<li><a href="#Validación" title="Validación">Validación</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Rediseño-de-Lazarillo" title="Rediseño de Lazarillo">Rediseño de Lazarillo</a><ul class="nav">
+<li><a href="#Resumen-del-proyecto" title="Resumen del proyecto">Resumen del proyecto</a><ul class="nav">
+<li><a href="#Ficha-técnica" title="Ficha técnica">Ficha técnica</a></li>
+<li><a href="#El-desafío" title="El desafío">El desafío</a></li>
+<li><a href="#La-Solución" title="La Solución">La Solución</a></li>
+</ul>
+</li>
+<li><a href="#El-proceso" title="El proceso">El proceso</a><ul class="nav">
+<li><a href="#Entendimiento" title="Entendimiento">Entendimiento</a></li>
+<li><a href="#Investigación" title="Investigación">Investigación</a></li>
+<li><a href="#Análisis" title="Análisis">Análisis</a></li>
+<li><a href="#Ideación" title="Ideación">Ideación</a></li>
+<li><a href="#Diseño" title="Diseño">Diseño</a></li>
+<li><a href="#Validación" title="Validación">Validación</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

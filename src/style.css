@@ -1,6 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #381C75;
 }
 
@@ -9,18 +8,17 @@ body {
 }
 
 .title-presentacion {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: bold;
-  font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   line-height: normal;
 }
 
 .title-presentacion2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: bold;
-  font-weight: bold;
-  font-size: 70px;
+ 
+  font-size: 100px;
   line-height: normal;
   color: #FF285B;
 }
@@ -42,9 +40,11 @@ body {
   display: block;
 }
 
+/*
 #sectionSobreMi {
   display: none;
 }
+*/
 
 #printProyect {
   display: none;
@@ -52,6 +52,9 @@ body {
 
 .section-contacto {
   text-align: center;
+  background-color: #381C75;
+  color: #fff;
+  padding-top: 50px;
 }
 
 html {
@@ -63,11 +66,58 @@ html {
   padding-left: 0;
 }
 
-.colorTextNavbar {
+.textNavbar {
   color: #381C75;
 }
 
-a:hover {
-  background-color: #FF285B;
+a {
+  text-decoration: none;
+  color: #7A7979;
 }
 
+.textNavbar {
+  position: relative;
+}
+
+.textNavbar::after {
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #FF285B;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.textNavbar:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+.presentacion {
+  align-items: center;
+  justify-content: center;
+  padding-top: 140px;
+}
+
+.color-1 {
+  color: #FF285B;
+}
+
+.btn-correo {
+  background-color: #FF285B;
+  color: #fff;
+  padding: 5px;
+}
+
+.title-proyectos {
+  text-align: center;
+  font-size: 50px;
+  font-style: bold;
+  color: #381C75;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
