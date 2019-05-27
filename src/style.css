@@ -4,46 +4,20 @@ body {
 }
 
 
-.title-presentacion {
+.title-intro {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
-  line-height: normal;
 }
 
-.title-presentacion2 {
+.title-intro2 {
   font-family: 'Lato', sans-serif;
-  font-style: bold;
- 
   font-size: 100px;
-  line-height: normal;
-  color: #5039D3;
-}
-
-.sub-descripcion {
-  color: #888888;
-
+  font-weight: 500;
+  color: #6A3BD6;
 }
 
 .sectionIntro {
   height: 100vh;
-}
-
-#sectionPresentacion {
-  display: block;
-}
-
-#sectionProyectos {
-  display: block;
-}
-
-/*
-#sectionSobreMi {
-  display: none;
-}
-*/
-
-#printProyect {
-  display: none;
 }
 
 .section-contacto {
@@ -61,8 +35,9 @@ html {
   padding-left: 0;
 }
 
-.textNavbar {
-  color: #4734D3;
+.text-nav {
+  padding-top: 15px;
+  font-size: 20px;
 }
 
 a {
@@ -72,13 +47,13 @@ a {
 }
 
 a:hover {
-  color: #ED446E;
+  color: #6A3BD6;
+  text-decoration: none;
+
 }
 
 
 .presentacion {
-  align-items: center;
-  justify-content: center;
   padding-top: 140px;
 }
 
@@ -87,18 +62,18 @@ a:hover {
 }
 
 .btn-correo {
-  background-color: #ED446E;
+  background-color: #6A3BD6;
   color: #fff;
-  padding: 5px;
+  padding: 7px;
 }
 
 .title-proyectos {
   text-align: center;
-  font-size: 50px;
+  font-size: 25px;
   font-style: bold;
-  color: #4734D3;
   padding-top: 20px;
   padding-bottom: 30px;
+  color: #6A3BD6;
 }
 
 .carta {
@@ -108,5 +83,12 @@ a:hover {
 .title-link {
   font-size: 25px;
   font-style: bold;
-  color: #4734D3;
+  
 }
+
+.arrow-down {
+  color: #6A3BD6;
+  font-size: 50px;
+  padding-top: 90px;
+}
+
